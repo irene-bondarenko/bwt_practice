@@ -9,11 +9,6 @@
             <small>Обратная связь</small></h1>
     </div>
 
-
-
-
-
-
     <form method="POST" action="{{action('FeedbackController@store')}}" enctype="multipart/form-data">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <h3><b>Оставьте отзыв:</h3><br>
@@ -43,11 +38,5 @@
         <textarea name="content" id="content" class="form-control"></textarea><br>
         <input type="submit" class="btn-lg btn-primary" value="Отправить"/>
     </form>
-
-
-
-
-
-
 
 @endsection

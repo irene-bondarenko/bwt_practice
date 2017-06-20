@@ -33,6 +33,7 @@ Route::get('weather','FrontController@weather');
 
 Route::get('feedback','FrontController@feedback');
 Route::post('feedback/store', 'FeedbackController@store');
+Route::get('feedback/showAll', 'FeedbackController@showAll');
 
 Route::get('thanks','FrontController@thanks');
 

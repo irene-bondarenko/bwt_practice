@@ -23,7 +23,14 @@ class FeedbackController extends Controller
         $all=$request->all();
         Feedback::create($all);
         return redirect()->action('FrontController@thanks');
+    }
 
-        /**return back()->with('message','Спасибо за отзыв!');**/
+   public function showAll()
+    {
+        //получаем все статьи из базы
+        $feedback=Feedback::all();
+        //полученные данные передаем в вид
+        return view('site.text',['feedback'=>$feedback]);
+
     }
 }
