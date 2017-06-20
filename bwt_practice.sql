@@ -24,12 +24,14 @@ CREATE TABLE `feedback` (
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `content` varchar(255) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=217 DEFAULT CHARSET=utf8;
 
 /*Data for the table `feedback` */
 
-insert  into `feedback`(`id`,`name`,`email`,`content`) values (1,'Irene','ren.kol.t@gmail.com','hello'),(2,'Irene','jscdnmx,z','Hi');
+insert  into `feedback`(`id`,`name`,`email`,`content`,`created_at`,`updated_at`) values (1,'Irene','ren.kol.t@gmail.com','hello',NULL,NULL),(213,'Admin','rina.cap@yandex.ua','Hi','2017-06-20 06:12:58','2017-06-20 06:12:58'),(214,'Ira','admin@admin.com','45 скороговорок, собранные в единый текст. Читайте его вслух ежедневно и через 2 недели вы удивитесь возможностям своей речи. Сохраняйте на стену, чтобы не забыть. ','2017-06-20 06:15:22','2017-06-20 06:15:22'),(216,'Ira','ren.kol.t@gmail.com','Heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeey','2017-06-20 06:31:18','2017-06-20 06:31:18');
 
 /*Table structure for table `migrations` */
 
