@@ -56,16 +56,16 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `sex` enum('Male','Female') DEFAULT NULL,
   `bdate` date DEFAULT NULL,
-  `rememder_token` varchar(100) DEFAULT NULL,
+  `remember_token` varchar(100) DEFAULT NULL,
   `role` tinyint(4) DEFAULT '1',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 /*Data for the table `users` */
 
-insert  into `users`(`id`,`first_name`,`last_name`,`email`,`password`,`sex`,`bdate`,`rememder_token`,`role`,`created_at`,`updated_at`) values (3,'Sasha','Smolina','rina.cap@yandex.ua','$2y$10$1AM/Q7IKdXNey4yGzV.7y.pjVaVsFHa8dJ3A.rY73NHiDydLBsvsa','Female','1997-03-23','3',127,'2017-06-16 09:11:59',NULL),(4,'Irene','Smolina','ren.kol.t@gmail.com','$2y$10$VNddQtMGW9lfE7w5RMlZRejkZ7KHoXGJW09bprhEBVKGpczB4elMS','Female','1997-03-23',NULL,3,'2017-06-16 09:18:21','2017-06-16 09:18:21'),(5,'Sasha','Smolina','admin@admin.com','$2y$10$XKY84zytvHtArd8TUJUmjODoDMKdQDwZFXmSA0cAcDwrd5bnqXar.','Male','2017-06-07',NULL,3,'2017-06-17 09:22:03','2017-06-17 09:22:03');
+insert  into `users`(`id`,`first_name`,`last_name`,`email`,`password`,`sex`,`bdate`,`remember_token`,`role`,`created_at`,`updated_at`) values (3,'Sasha','Smolina','rina.cap@yandex.ua','$2y$10$1AM/Q7IKdXNey4yGzV.7y.pjVaVsFHa8dJ3A.rY73NHiDydLBsvsa','Female','1997-03-23','3',127,'2017-06-16 09:11:59',NULL),(4,'Irene','Smolina','ren.kol.t@gmail.com','$2y$10$VNddQtMGW9lfE7w5RMlZRejkZ7KHoXGJW09bprhEBVKGpczB4elMS','Female','1997-03-23',NULL,3,'2017-06-16 09:18:21','2017-06-16 09:18:21'),(5,'Sasha','Smolina','admin@admin.com','$2y$10$XKY84zytvHtArd8TUJUmjODoDMKdQDwZFXmSA0cAcDwrd5bnqXar.','Male','2017-06-07',NULL,3,'2017-06-17 09:22:03','2017-06-17 09:22:03'),(6,'Sasha','Petrenko','wefdalskmbhg@gfweams.com','$2y$10$8j45w3fVOsE21iduAIJccuFECdNwXLjS1Tt/5RZ864D3ebpeI9q7a','Male','1989-06-22','FwM0T3bRP7GrjalDZExgyVob5ZWFAtvWri8ggTGWhoplaar3izrhJr6teMyE',3,'2017-06-20 07:57:13','2017-06-20 07:57:35');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
