@@ -6,8 +6,6 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    const ROLE_ADMINISTRATOR = 1;
-    const ROLE_EDITOR = 2;
     const ROLE_SUBSCRIBER = 3;
 
     /**

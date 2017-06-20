@@ -84,7 +84,8 @@
                                 <label for="sex" class="col-md-4 control-label">Пол</label>
 
                                 <div class="col-md-6">
-                                    <select size="3" id="sex" type="text" class="form-control" name="sex" value="{{ old('sex') }}">
+                                    <select size="3" id="sex" type="text" class="form-control" name="sex">
+                                        <option selected value="">Не выбрано</option>
                                         <option value="Female">Женский</option>
                                         <option value="Male">Мужской</option>
                                     </select>
@@ -97,7 +98,7 @@
                                 <label for="bdate" class="col-md-4 control-label">Дата рождения</label>
 
                                 <div class="col-md-6">
-                                    <input id="bdate" type="date" class="form-control" name="bdate" value="{{ old('bdate') }}">
+                                    <input id="bdate" type="date" class="form-control" name="bdate">
                                 </div>
                             </div>
 
