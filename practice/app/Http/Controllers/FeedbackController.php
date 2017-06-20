@@ -27,7 +27,7 @@ class FeedbackController extends Controller
 
    public function showAll()
     {
-        //получаем все статьи из базы
+        //получаем все отзывы из базы
         $feedback=Feedback::all();
         //полученные данные передаем в вид
         return view('site.text',['feedback'=>$feedback]);
