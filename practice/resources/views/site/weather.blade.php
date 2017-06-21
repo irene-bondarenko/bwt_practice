@@ -16,10 +16,12 @@
     @if(!Auth::guest())
 
 
-
+        <p style="font-size: 25px; margin-bottom: 2px; color: dodgerblue;">Запорожье</p>
 
         <?php
         $text = file_get_contents( 'https://www.gismeteo.ua/weather-zaporizhia-5093/' );
+        preg_match( '/<dd>(.*?)<\\/dd>/is' , $text , $title1 );
+        echo $title1[1];
         preg_match( '/<div class="temp">(.*?)<\\/div>/is' , $text , $title );
         echo $title[1];
         ?>
